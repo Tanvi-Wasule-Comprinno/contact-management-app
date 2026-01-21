@@ -6,7 +6,7 @@ Angular (Frontend) and Java Spring Boot (Backend) as per the assignment provided
 The application allows users to register, login, manage contacts with pagination, and update their profile, with proper validations and API documentation using Swagger.
 
 
-# Assignment Requirements Fulfilled
+
  # User Management
 
  User Registration
@@ -123,30 +123,6 @@ Bearer <JWT_TOKEN>
 
 Now all secured APIs can be tested
 
-* Project Structure
-Backend
-contact-app-backend/
-├── controller
-├── service
-├── repository
-├── entity
-├── dto
-├── util (JWT)
-├── config (Security & CORS)
-└── ContactAppBackendApplication.java
-
-Frontend
-contact-app-frontend/
-├── app
-│   ├── login
-│   ├── register
-│   ├── dashboard
-│   ├── profile
-│   ├── navbar
-│   ├── interceptors
-│   └── app.routes.ts
-└── main.ts
-
 
 # Authentication & Security
 
@@ -249,3 +225,4 @@ Profile page
 
 
 Logout
+
