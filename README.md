@@ -1,4 +1,4 @@
-📇 Contact Record Keeping Application
+# Contact Record Keeping Application
 
 A full-stack Contact Record Keeping Application developed using
 Angular (Frontend) and Java Spring Boot (Backend) as per the assignment provided by Comprinno Technology.
@@ -6,86 +6,86 @@ Angular (Frontend) and Java Spring Boot (Backend) as per the assignment provided
 The application allows users to register, login, manage contacts with pagination, and update their profile, with proper validations and API documentation using Swagger.
 
 
-📌 Assignment Requirements Fulfilled
-✅ User Management
+# Assignment Requirements Fulfilled
+ # User Management
 
-User Registration
+ User Registration
 
-User Login
+ User Login
 
-JWT-based authentication
-
-
-✅ Contact Management
-
-Add new contact
-
-View all contacts (paginated)
-
-Update contact
-
-Delete contact
-
-User-specific contacts (secured via JWT)
+ JWT-based authentication
 
 
-✅ Profile Management
+# Contact Management
 
-View profile
+  Add new contact
 
-Update name
+  View all contacts (paginated)
 
-Update password
+  Update contact
 
-Email is read-only
+  Delete contact
 
-
-✅ Validation
-
-Required field validation
-
-Email format validation
-
-Password length validation
-
-Phone number validation
+  User-specific contacts (secured via JWT)
 
 
-✅ API Documentation
+# Profile Management
 
-Swagger UI integrated
+   View profile
 
-All backend APIs documented and testable via browser
+   Update name
 
-✔ All assignment requirements are fully implemented
+   Update password
 
-
-🛠️ Technology Stack
-
-Frontend
-
-Angular
-
-Bootstrap
-
-TypeScript
-
-HTML, CSS
+   Email is read-only
 
 
-Backend
+# Validation
 
-Java Spring Boot
+   Required field validation
 
-Spring Security
+   Email format validation
 
-Spring Data JPA
+   Password length validation
 
-JWT Authentication
+   Phone number validation
 
-PostgreSQL
 
-Swagger (OpenAPI 3.0)
+# API Documentation
+
+   Swagger UI integrated
+
+   All backend APIs documented and testable via browser
+
+  ✔ All assignment requirements are fully implemented
+
+
+ # Technology Stack
+
+   #Frontend
+
+   Angular
+
+   Bootstrap
+
+   TypeScript
+
+   HTML, CSS
+
+
+  #Backend
+
+   Java Spring Boot
+
+   Spring Security
+
+   Spring Data JPA
+
+   JWT Authentication
+
+   PostgreSQL
+
+   Swagger (OpenAPI 3.0)
 
 
 📄 API Documentation (Swagger)
@@ -97,15 +97,15 @@ http://localhost:7070/swagger-ui/index.html
 
 (<Screenshot 2026-01-19 143419.png>)
 
-Features of Swagger in this Project
+#Features of Swagger in this Project
 
-Lists all REST APIs
+  Lists all REST APIs
 
-Shows request & response formats
+  Shows request & response formats
 
-Allows testing APIs directly from browser
+  Allows testing APIs directly from browser
 
-Supports Authorization (Bearer Token) for secured APIs
+  Supports Authorization (Bearer Token) for secured APIs
 
 
 How to Use JWT in Swagger
@@ -123,7 +123,7 @@ Bearer <JWT_TOKEN>
 
 Now all secured APIs can be tested
 
-🏗️ Project Structure
+* Project Structure
 Backend
 contact-app-backend/
 ├── controller
@@ -148,30 +148,30 @@ contact-app-frontend/
 └── main.ts
 
 
-🔐 Authentication & Security
+# Authentication & Security
 
-JWT token generated on login
+  JWT token generated on login
 
-Token stored in localStorage
+  Token stored in localStorage
 
-Angular HttpInterceptor attaches token automatically
+  Angular HttpInterceptor attaches token automatically
 
-Backend extracts userId from token
+  Backend extracts userId from token
 
-Stateless authentication
+  Stateless authentication
 
-All secured APIs protected
+  All secured APIs protected
 
 
-📄 Pagination Implementation
+# Pagination Implementation
 
-Server-side pagination using Spring Data JPA
+  Server-side pagination using Spring Data JPA
 
-Pageable used in backend
+  Pageable used in backend
 
-Frontend sends page and size
+  Frontend sends page and size
 
-UI includes pagination controls
+  UI includes pagination controls
 
 
 🔗 REST API Endpoints
@@ -196,7 +196,7 @@ POST	/api/contacts	                Add contact
 PUT	    /api/contacts/{id}	        Update contact
 DELETE	/api/contacts/{id}	        Delete contact
 
-▶️ How to Run the Application
+* How to Run the Application
 
 Backend
 cd contact-app-backend
@@ -222,7 +222,7 @@ Frontend runs on:
 
 http://localhost:4200
 
-🧪 API Testing
+* API Testing
 
 APIs tested using:
 
@@ -235,7 +235,7 @@ Authorization via:
 Authorization: Bearer <JWT_TOKEN>
 
 
-🎨 UI Pages Implemented
+# UI Pages Implemented
 
 Login (with Register link)
 
@@ -246,5 +246,6 @@ Dashboard (Contacts + Pagination)
 Add / Edit / Delete Contact
 
 Profile page
+
 
 Logout
