@@ -1,0 +1,20 @@
+.register-card {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.btn-success {
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+body {
+  background: linear-gradient(135deg, #e8f0ff, #f7faff);
+}

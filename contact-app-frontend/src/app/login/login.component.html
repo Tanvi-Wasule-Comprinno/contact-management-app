@@ -1,0 +1,77 @@
+<div class="container vh-100 d-flex justify-content-center align-items-center">
+  <div class="row w-100 shadow-lg rounded overflow-hidden" style="max-width: 900px;">
+
+    <!-- LEFT IMAGE SECTION -->
+    <div class="col-md-6 d-none d-md-flex bg-primary text-white flex-column
+                justify-content-center align-items-center p-4">
+      <h2 class="fw-bold mb-3">👋 Welcome Back!</h2>
+      <p class="text-center">
+        Manage your contacts securely <br>
+        with ease & confidence 
+      </p>
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+        alt="login"
+        class="img-fluid mt-4"
+        style="max-height: 250px;">
+    </div>
+
+    <!-- RIGHT FORM SECTION -->
+    <div class="col-md-6 p-5 bg-white">
+      <h3 class="fw-bold mb-4 text-center">Login</h3>
+
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+        <!-- EMAIL -->
+        <div class="mb-3">
+          <label>Email</label>
+          <input type="email"
+                 class="form-control"
+                 formControlName="email">
+
+          <small class="text-danger"
+            *ngIf="loginForm.get('email')?.touched &&
+                   loginForm.get('email')?.invalid">
+            <span *ngIf="loginForm.get('email')?.errors?.['required']">
+              Email is required
+            </span>
+            <span *ngIf="loginForm.get('email')?.errors?.['email']">
+              Enter a valid email
+            </span>
+          </small>
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="mb-3">
+          <label>Password</label>
+          <input type="password"
+                 class="form-control"
+                 formControlName="password">
+
+          <small class="text-danger"
+            *ngIf="loginForm.get('password')?.touched &&
+                   loginForm.get('password')?.invalid">
+            Password is required
+          </small>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn btn-primary w-100 mt-2"
+                [disabled]="loginForm.invalid">
+           Login
+        </button>
+
+      </form>
+
+      <!-- REGISTER LINK -->
+      <div class="text-center mt-4">
+        <span>Not a user?</span>
+        <a routerLink="/register"
+           class="fw-bold text-decoration-none">
+          Register here 
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
